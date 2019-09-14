@@ -1,0 +1,28 @@
+@import "vars";
+
+body{
+  margin: $layout-center;
+  width: $width-mobile;
+}
+
+.trip-preview{
+  background-color: $color-primary;
+}
+
+.plans{
+
+  .plans__options__tiles{
+
+    .plans__options__tiles__tile--1{
+      background-color: $color-secondary;
+    }
+
+    .plans__options__tiles__tile--2{
+      background-color: $color-secondary-dark;
+    }
+
+    .plans__options__tiles__tile-3{
+      background-color: $color-primary;
+    }
+  }
+}
