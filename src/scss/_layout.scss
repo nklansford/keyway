@@ -1,12 +1,17 @@
 @import "vars";
+@import "mixins";
 
 body{
   margin: $layout-center;
   width: $width-mobile;
 }
-
-.trip-preview{
-  background-color: $color-primary;
+.cta{
+  border: solid 3px red;
+  width: $width-mobile;
+  margin: $layout-center;
+  .cta__btn{
+    margin-bottom: 60px;
+  }
 }
 
 .plans{
@@ -25,4 +30,8 @@ body{
       background-color: $color-primary;
     }
   }
+}
+
+.trip-preview{
+  background-color: $color-primary;
 }

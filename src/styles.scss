@@ -3,8 +3,6 @@
 @import "layout";
 @import "mixins";
 @import "type";
+@import "responsive";
 @import "vars";
-
-@import "queries/tablet";
-@import "queries/desktop";
-@import "queries/mobile";
+@import "atoms/btn";
