@@ -1,22 +1,8 @@
-@import "vars";
-
 body{
   @include type-setup(1.4rem, 2rem);
   font-family: $font-body;
   font-weight: $font-weight-reg;
   color: $color-text-primary;
-}
-.cta{
-  margin: $layout-center;
-  width: $width-mobile;
-  .cta__holler{
-    @include type-setup(3.1rem, 4.1rem);
-    margin: 0px;
-    text-align: center;
-  }
-  .cta__body{
-    @include type-setup(1.6rem, 2.3rem);
-  }
 }
 html{
   font-size: 10px;
@@ -30,46 +16,11 @@ h2{
   @include type-setup(3.5rem, 3.9rem);
   font-weight: $font-weight-reg;
 }
-header{
-  background-image: url(images/keyway-hero-image.png);
-  color: $color-text-secondary;
-  text-align: center;a
-    .header__tagline{
-      @include type-setup(1.7rem, 1.9rem);
-    }
-}
-.plans{
-  .plans__options{
-    color: $color-text-secondary;
-  }
-  .plans__options__tiles{
-    padding: 0px;
-    .plans__options__tiles__tile{
-      .plans__options__tiles__tile__title{
-        @include type-setup(2.7rem, 3.2rem);
-        font-weight: $font-weight-reg;
-      }
-      .plans__options__tiles__tile__body{
-        @include type-setup(1.8rem, 2.6rem);
-      }
-    }
-  }
-}
-
-.trip-preview{
-  color: $color-text-secondary;
-  .trip-preview__tiles{
-    padding: 0px;
-    .trip-preview__tiles__tile{
-      list-style: none;
-      .trip-preview__tiles__tile__title{
-        @include type-setup(2rem, 2.4rem);
-        font-weight: $font-weight-light;
-      }
-      .trip-preview__tiles__tile__body{
-        @include type-setup(1.4rem, 2rem);
-        font-weight: $font-weight-light;
-      }
-    }
-  }
-}
+// header{
+//   background-image: url(images/keyway-hero-image.png);
+//   color: $color-text-secondary;
+//   text-align: center;
+//     .header__tagline{
+//       @include type-setup(1.7rem, 1.9rem);
+//     }
+// }

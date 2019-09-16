@@ -1,37 +1,12 @@
-@import "vars";
-@import "mixins";
-
 body{
   margin: $layout-center;
-  width: $width-mobile;
-}
-.cta{
-  border: solid 3px red;
-  width: $width-mobile;
-  margin: $layout-center;
-  .cta__btn{
-    margin-bottom: 60px;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: 100%;
   }
-}
 
-.plans{
-
-  .plans__options__tiles{
-
-    .plans__options__tiles__tile--1{
-      background-color: $color-secondary;
-    }
-
-    .plans__options__tiles__tile--2{
-      background-color: $color-secondary-dark;
-    }
-
-    .plans__options__tiles__tile-3{
-      background-color: $color-primary;
-    }
+  @media (min-width: 1200px) {
+    width: 100%;
   }
-}
-
-.trip-preview{
-  background-color: $color-primary;
 }

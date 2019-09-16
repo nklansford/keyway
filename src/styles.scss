@@ -1,8 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900');
+@import "vars";
+@import "mixins";
 
 @import "layout";
-@import "mixins";
 @import "type";
-@import "responsive";
-@import "vars";
 @import "atoms/btn";
+
+@import "modules/cta";
+@import "modules/header";
+@import "modules/plans";
+@import "modules/trip-preview";
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900');

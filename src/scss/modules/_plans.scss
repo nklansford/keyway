@@ -1,0 +1,49 @@
+.plans__options{
+  color: $color-text-secondary;
+}
+.plans__intro__title{
+  text-align: center;
+  margin-top: 100px;
+}
+.plans__intro__body{
+  margin: 0px 12px;
+}
+.plans__options__tiles{
+  padding: 0px;
+  @media (min-width: 1200px){
+    @include flex();
+  }
+}
+.plans__options__tiles__tile{
+  margin: 0px;
+  padding-bottom: 30px;
+  @media (min-width: 1200px){
+    width: 33.33%;
+    list-style: none;
+  }
+}
+.plans__options__tiles__tile--1{
+  background-color: $color-secondary;
+}
+
+.plans__options__tiles__tile--2{
+  background-color: $color-secondary-dark;
+}
+
+.plans__options__tiles__tile-3{
+  background-color: $color-primary;
+}
+.plans__options__tiles__tile__btn{
+  margin: 0px 48px;
+}
+.plans__options__tiles__tile__body{
+  @include type-setup(1.8rem, 2.6rem);
+  margin: 0px 48px;
+  padding-bottom: 30px;
+}
+.plans__options__tiles__tile__title{
+  @include type-setup(2.7rem, 3.2rem);
+  font-weight: $font-weight-light;
+  margin: 0px 48px;
+  padding: 25px 0px 30px;
+}
