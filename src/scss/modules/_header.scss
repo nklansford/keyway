@@ -1,11 +1,8 @@
 header{
   background: url(images/keyway-hero-image-mobile.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 260px;
-  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
   color: $color-text-secondary;
   text-align: center;
     .header__tagline{
