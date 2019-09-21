@@ -9,13 +9,22 @@
 }
 .trip-preview__tiles{
   padding-bottom: 70px;
-  @media (min-width: 768px){
+  width: 289px;
+  margin: 0px auto;
+  @media (min-width: $width-tablet){
     @include flex();
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+    padding: 0px 67px;
     justify-content: space-between;
-    margin: 0 85px;
   }
-  @media (min-width: 1200px){
-    margin: 0px 20px 0px 0px;
+  @media (min-width: $width-desktop){
+    max-width: none;
+    min-width: 1261px;
+  }
+  @media (min-width: $width-desktop-large){
+    max-width: 1545px;
   }
 }
 .trip-preview__tiles__tile{

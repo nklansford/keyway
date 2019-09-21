@@ -1,6 +1,20 @@
 .plans__options{
   color: $color-text-secondary;
 }
+.plans__intro{
+  margin: 0px auto;
+  width: 487px;
+  padding-bottom: 20px;
+  @media (min-width: $width-tablet) {
+    width: 665px;
+  }
+  @media (min-width: $width-desktop) {
+    width: 1050px;
+  }
+  @media (min-width: $width-desktop-large) {
+    width: 1390px;
+  }
+}
 .plans__intro__title{
   text-align: center;
   margin-top: 100px;

@@ -7,12 +7,16 @@ header{
   text-align: center;
   height: 259px;
 
-  @media (min-width: 768px){
+  @media (min-width: $width-tablet){
     background-image: url("images/keyway-hero-image-tablet.png");
     height: 460px;
   }
-  @media (min-width: 1200px){
-    // background-image: url("images/keyway-hero-image-desktop.png");
+  @media (min-width: $width-desktop){
+    background-image: url("images/keyway-hero-image-desktop.png");
+    height: 650px;
+  }
+  @media (min-width: $width-desktop-large){
+    background-image: url("images/keyway-hero-image-large-desktop.png");
     height: 650px;
   }
 }
@@ -20,6 +24,14 @@ header{
 .header__title{
   @include type-setup(4.6rem, 5.7rem);
   padding-top: 50px;
+
+  @media (min-width: $width-tablet){
+    padding-top: 170px;
+  }
+  @media (min-width: $width-desktop){
+    padding-top: 230px;
+    @include type-setup(6.6rem, 5.7rem)
+  }
 
 }
 
