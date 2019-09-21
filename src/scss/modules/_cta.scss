@@ -11,7 +11,7 @@
     "btn"
     "body";
 
-  @media (min-width: 768px) {
+  @media (min-width: $width-tablet) {
     width: 665px;
     margin: 72px auto;
     display: grid;
@@ -24,7 +24,7 @@
       "body  body";
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: $width-desktop) {
     width: 1050px;
     margin: 55px auto 147px;
     grid-template-columns: 507px 460px;
