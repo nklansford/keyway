@@ -1,7 +1,7 @@
 .cta {
   width: $width-mobile;
   // margin: $layout-center;
-  margin: 72px 12px 101px;
+  margin: 72px auto 101px;
   display: grid;
   grid-template-columns: 100%;
   grid-row-gap: 18px;
@@ -12,7 +12,8 @@
     "body";
 
   @media (min-width: 768px) {
-    margin: 72px 56px;
+    width: 665px;
+    margin: 72px auto;
     display: grid;
     grid-template-columns: 327px 290px;
     grid-column-gap: 39px;
@@ -24,7 +25,8 @@
   }
 
   @media (min-width: 1200px) {
-    margin-top: 55px 78px 147px;
+    width: 1050px;
+    margin: 55px auto 147px;
     grid-template-columns: 507px 460px;
     grid-column-gap: 77px;
     grid-row-gap: 65px;
