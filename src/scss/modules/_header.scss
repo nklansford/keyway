@@ -1,0 +1,46 @@
+header{
+  background-image: url("images/keyway-hero-image-mobile.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $color-text-secondary;
+  text-align: center;
+  height: 259px;
+
+  @media (min-width: $width-tablet){
+    background-image: url("images/keyway-hero-image-tablet.png");
+    height: 460px;
+  }
+  @media (min-width: $width-desktop){
+    background-image: url("images/keyway-hero-image-desktop.png");
+    height: 650px;
+  }
+  @media (min-width: $width-desktop-large){
+    background-image: url("images/keyway-hero-image-large-desktop.png");
+    height: 650px;
+  }
+}
+
+.header__title{
+  @include type-setup(4.6rem, 5.7rem);
+  padding-top: 50px;
+
+  @media (min-width: $width-tablet){
+    padding-top: 170px;
+  }
+  @media (min-width: $width-desktop){
+    padding-top: 230px;
+    @include type-setup(6.6rem, 5.7rem)
+  }
+
+}
+
+.header__tagline{
+  @include type-setup(1.7rem, 1.9rem);
+}
+
+// background: url(images/bg.jpg) no-repeat center center fixed;
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;

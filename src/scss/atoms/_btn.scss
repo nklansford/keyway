@@ -1,0 +1,8 @@
+.btn{
+    @include type-setup(2.1rem, 2.5rem);
+    font-weight: $font-weight-light;
+    border: solid 2px;
+    text-align: center;
+    width: 85%;
+    padding: 7px 0px;
+}

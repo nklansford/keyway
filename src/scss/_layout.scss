@@ -1,0 +1,12 @@
+body{
+  margin: $layout-center;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: 100%;
+  }
+
+  @media (min-width: 1200px) {
+    width: 100%;
+  }
+}

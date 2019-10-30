@@ -1,0 +1,18 @@
+body{
+  @include type-setup(1.4rem, 2rem);
+  font-family: $font-body;
+  font-weight: $font-weight-reg;
+  color: $color-text-primary;
+}
+html{
+  font-size: 10px;
+}
+h1{
+  @include type-setup(3.6rem, 5rem);
+  font-weight: $font-weight-reg;
+  text-transform: uppercase;
+}
+h2{
+  @include type-setup(3.5rem, 3.9rem);
+  font-weight: $font-weight-reg;
+}

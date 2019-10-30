@@ -1,0 +1,9 @@
+@mixin flex() {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+@mixin type-setup($size, $line-height) {
+  font-size: $size;
+  line-height: $line-height;
+}

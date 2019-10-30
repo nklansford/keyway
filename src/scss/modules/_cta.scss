@@ -1,0 +1,86 @@
+.cta {
+  width: $width-mobile;
+  // margin: $layout-center;
+  margin: 72px auto 101px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-row-gap: 18px;
+  grid-template-areas:
+    "image"
+    "holler"
+    "btn"
+    "body";
+
+  @media (min-width: $width-tablet) {
+    width: 665px;
+    margin: 72px auto;
+    display: grid;
+    grid-template-columns: 327px 290px;
+    grid-column-gap: 39px;
+    grid-row-gap: 47px;
+    grid-template-areas:
+      "image holler"
+      "image btn"
+      "body  body";
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 1050px;
+    margin: 173px auto 147px;
+    grid-template-columns: 507px 460px;
+    grid-column-gap: 77px;
+    grid-row-gap: 65px;
+    grid-template-areas:
+      "image holler"
+      "image body"
+      "image btn";
+  }
+}
+
+.cta__body {
+  grid-area: body;
+  margin-top: 40px;
+
+  @include type-setup(1.6rem, 2.3rem);
+
+  @media (min-width: 768px) {
+    margin-top: 0;
+  }
+}
+
+.cta__btn {
+  grid-area: btn;
+  align-self: start;
+  margin-bottom: 0px 0px 60px 0px;
+  width: 100%;
+  max-width: 290px;
+}
+
+.cta__image {
+  grid-area: image;
+  margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.cta__holler {
+  grid-area: holler;
+  align-self: end;
+  margin: 0px;
+  text-align: center;
+
+  @include type-setup(3.1rem, 4.1rem);
+
+  @media (min-width: 1200px) {
+    text-align: left;
+
+    @include type-setup(3.5rem, 4.3rem);
+  }
+}
